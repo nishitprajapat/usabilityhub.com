@@ -316,8 +316,17 @@ footer{
     padding: var(--padding-inline-section);
 }
 
-.subfooter-container{
-    /* margin-right: 200px; */
+/* .subfooter-container{
     justify-content: center;
+    gap: 30px;
+} */
+
+.subfooter-containerr{
+    justify-content: center;
+    gap: 140px;
+}
+
+.sub-links{
+    justify-content: space-between;
     gap: 30px;
 }
