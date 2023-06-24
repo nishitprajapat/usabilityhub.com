@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usabilty Hub Clone</title>
+    <title>Project 1 Flex Complete Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 
@@ -25,7 +26,7 @@
             <a href="#" class="company-logo">
                 <img src="assets/asset 1.png" alt="company logo">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-link">Products</a></li>
                     <li><a href="#" class="hover-link">Customers</a></li>
@@ -35,6 +36,9 @@
                     <li><a href="#" class="hover-link primary-button">Sign up</a></li>
                 </ul>
             </div>
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle"> 
+                <i class="fa-solid fa-bars"> </i>
+            </a>
         </div>
     </nav>
 
@@ -139,7 +143,7 @@
     </section>
 
     <section class="big-feature-section">
-        <div class="container flex big-feature-container" style="flex-direction: row-reverse;">
+        <div class="container flex big-feature-container big-sec2">
             <div class="feature-img">
                 <img src="assets/asset 21.png" alt="">
             </div>
@@ -202,6 +206,7 @@
 
     <!-- footer -->
     <footer>
+
         <div class="container flex footer-container">
             <a href="#" class="company-logo">
                 <img src="assets/asset 1.png" alt="">
@@ -238,27 +243,12 @@
         </div>
     </footer>
 
-    <!-- <div class="subfooter flex">
-        <div class="develope" style="margin: 0 100px 0 30px;">
-            <a href="https://github.com/nishitprajapat" class="hover-link"><i class="fa-brands fa-github"></i> Design & Developed By Nishit Prajapat</a>
-        </div>
-        <div class="container flex subfooter-container">
-            <a href="#" class="hover-link">Privacy policy</a>
-                <a href="#" class="hover-link">Terms & conditions</a>
-                <a href="#" class="hover-link">Security information</a>
-                <a href="#" class="hover-link"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" class="hover-link"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#" class="hover-link"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" class="hover-link"><i class="fa-brands fa-youtube"></i></a>
-        </div> -->
+   
 
-        <div class="subfooter flex">
+    <div class="subfooter flex">
 
         <div class="container flex subfooter-containerr">
-            <div>
-                <a href="https://github.com/nishitprajapat" class="hover-link"><i class="fa-brands fa-github"></i> Design & Developed By Nishit Prajapat</a>
-            </div>
-            <div class="sub-links flex">
+            <!-- <div class="sub-links flex"> -->
                 <a href="#" class="hover-link">Privacy policy</a>
                 <a href="#" class="hover-link">Terms & conditions</a>
                 <a href="#" class="hover-link">Security information</a>
@@ -266,15 +256,28 @@
                 <a href="#" class="hover-link"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#" class="hover-link"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="#" class="hover-link"><i class="fa-brands fa-youtube"></i></a>
-            </div>
+            <!-- </div> -->
                 
         </div>
         
     </div>
-        
-    </div>
     
+    <div class="bell">
+        <div class="container bl">
+            <i class="fa-regular fa-bell"></i>
+        </div>
+    </div>
     <script src="https://kit.fontawesome.com/9a63dbdc63.js" crossorigin="anonymous"></script>
+
+
+    <script>
+        const  toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        })
+    </script>
 </body>
 
 </html>
